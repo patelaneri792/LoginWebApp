@@ -17,3 +17,8 @@ EXPOSE 80
 
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 #ENTRYPOINT ["java","-jar","/app.jar"]
+
+#####################################################################
+FROM tomcat
+
+COPY app.war /usr/local/tomcat/webapps/
