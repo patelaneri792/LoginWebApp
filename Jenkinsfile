@@ -15,8 +15,8 @@ pipeline{
 			}
 	stage("Docker Build"){
 			steps{
-				withDockerRegistry(credentialsId: "dockeruser", url: 'hub.docker.com')
-				docker build -t hemamntakumarpati/LoginWebApp:latest ."
+				withDockerRegistry(credentialsId: 'dockeruser', url: 'hub.docker.com')
+				docker build -t hemamntakumarpati/LoginWebApp:latest .
 				echo "build successfully"
 				}
 			}
