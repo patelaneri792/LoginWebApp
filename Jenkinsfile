@@ -20,6 +20,6 @@ pipeline{
 				echo "build successfully"
 				}
 			}
-		}
 	}
 }
+
